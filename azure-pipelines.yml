@@ -1,0 +1,10 @@
+trigger:
+- main
+
+pool:
+  name: default
+
+steps:
+- script: echo Hello, world!
+- bash: ls -lrt '$(System.DefaultWorkingDirectory)'  
+- bash: ls -lrt '$(Build.SourcesDirectory)'
